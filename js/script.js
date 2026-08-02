@@ -27,7 +27,7 @@ mainNav.querySelectorAll('a').forEach(link => {
 });
 
 /* ---- Gallery data ---- */
-const GALLERY_COUNT = 21;
+const GALLERY_COUNT = 49;
 const captions = [
   'Team huddle before the match', 'Sparks squad ready for tournament day',
   'Community netball session', 'Team photo after a strong performance',
@@ -39,7 +39,21 @@ const captions = [
   'Sparks representing at a UAE netball cup', 'Match intensity on court',
   'Sparks community game day', 'Post-match celebrations',
   'Netball under the lights', 'Sparks players at a tournament',
-  'A dynamic play mid-match'
+  'A dynamic play mid-match', 'Sparks players sharing a laugh courtside',
+  'Focused and ready for the next play', 'Team lineup before kickoff',
+  'Sparks netball community in action', 'A well-earned break between games',
+  'Cheering on teammates from the sideline', 'Sparks in their match day colours',
+  'Passing drills during a training session', 'Coming together after the final whistle',
+  'Sparks squad at a UAE community tournament', 'On court and in the zone',
+  'Celebrating a great team performance', 'Sparks players warming up together',
+  'A snapshot from a Sparks community session', 'Netball action under the Dubai sun',
+  'Sparks netball, on and off the court', 'Team photo after another Sparks session',
+  'Building confidence one match at a time', 'Sparks players in mid-game action',
+  'Community and competition, Sparks style', 'A proud Sparks moment',
+  'Sparks netball squad together', 'Match day energy at Sparks',
+  'Sparks players supporting one another', 'Another highlight from the Sparks season',
+  'Sparks netball in full swing', 'Friendships built through netball',
+  'Sparks squad ready to take on the court'
 ];
 
 const galleryGrid = document.getElementById('galleryGrid');
