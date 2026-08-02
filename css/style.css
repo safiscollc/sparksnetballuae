@@ -376,30 +376,9 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; }
 .achievements-grid {
   margin-top: 48px;
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
   align-items: stretch;
-}
-.achievement-highlight {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: var(--radius);
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 6px;
-}
-.trophy-emoji { font-size: 2.6rem; margin-bottom: 8px; }
-.achievement-highlight h3 {
-  color: var(--yellow);
-  font-size: 1.8rem;
-  font-weight: 800;
-}
-.achievement-highlight p {
-  color: rgba(255,255,255,0.8);
-  font-size: 1.05rem;
 }
 .achievement-photo {
   position: relative;
@@ -408,21 +387,25 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; }
   box-shadow: var(--shadow);
 }
 .achievement-photo img {
-  width: 100%; height: 100%;
+  width: 100%;
+  aspect-ratio: 4/3;
   object-fit: cover;
-  min-height: 280px;
+  transition: transform 0.4s ease;
 }
+.achievement-photo:hover img { transform: scale(1.05); }
 .achievement-caption {
   position: absolute;
   left: 0; right: 0; bottom: 0;
-  padding: 24px;
-  background: linear-gradient(0deg, rgba(3,2,38,0.9), transparent);
+  padding: 22px;
+  background: linear-gradient(0deg, rgba(3,2,38,0.92), transparent);
   color: var(--white);
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 }
-.achievement-caption span { color: rgba(255,255,255,0.75); font-size: 0.85rem; }
+.medal-emoji { font-size: 1.6rem; margin-bottom: 4px; }
+.achievement-caption strong { font-size: 1.05rem; }
+.achievement-caption span { color: var(--yellow); font-size: 0.85rem; font-weight: 600; }
 
 /* ===== Offer ===== */
 .offer-grid {
