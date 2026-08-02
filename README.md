@@ -1,6 +1,6 @@
-# Sparks Netball UAE — Website
+# Sparks Netball UAE Website
 
-A simple, static one-page website for Sparks Netball UAE. No build tools or frameworks — just HTML, CSS and vanilla JS.
+A simple, static one-page website for Sparks Netball UAE. No build tools or frameworks, just HTML, CSS and vanilla JS.
 
 ## Structure
 
@@ -25,7 +25,7 @@ Then visit `http://localhost:8000`.
 
 ## Editing content
 
-- All copy lives directly in `index.html` — edit text in place.
+- All copy lives directly in `index.html`; edit text in place.
 - Contact details (phone, socials) are in the `#join` section and the footer.
 - To add/replace gallery photos: drop a new image into `assets/img/full/` and
   `assets/img/thumb/`, then add an entry to the `gallery-XX` naming pattern
@@ -38,7 +38,7 @@ Then visit `http://localhost:8000`.
 ### Netlify
 1. Push this folder to a GitHub repo (see below), or drag-and-drop the
    `website` folder directly onto [app.netlify.com/drop](https://app.netlify.com/drop).
-2. No build command needed — publish directory is `.` (the project root).
+2. No build command needed; publish directory is `.` (the project root).
 
 ### GitHub Pages
 1. Push this folder to a GitHub repo.

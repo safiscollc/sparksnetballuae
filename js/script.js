@@ -1,4 +1,4 @@
-// ===== Sparks Netball UAE — site script =====
+// ===== Sparks Netball UAE site script =====
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -34,7 +34,7 @@ const captions = [
   'Sparks players on court', 'Match action at a community tournament',
   'Warm-up before kickoff', 'Sparks in action during a UAE tournament',
   'Team spirit on and off the court', 'Match day at the community court',
-  'Sparks celebrating with medals', 'In the game — Sparks netball action',
+  'Sparks celebrating with medals', 'In the game, Sparks netball action',
   'Sparks squad photo', 'Building friendships through netball',
   'Sparks representing at a UAE netball cup', 'Match intensity on court',
   'Sparks community game day', 'Post-match celebrations',
