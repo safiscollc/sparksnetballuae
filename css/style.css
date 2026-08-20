@@ -349,6 +349,28 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; }
   margin: 0 auto;
   text-align: center;
 }
+.event-cover {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 28px;
+}
+.event-cover img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.event-cover-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 14px 20px;
+  background: linear-gradient(0deg, rgba(3,2,38,0.85), transparent);
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: left;
+}
 .event-badge {
   display: inline-block;
   background: var(--orange);
