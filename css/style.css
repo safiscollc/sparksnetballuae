@@ -96,6 +96,8 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; }
 /* 3D / raised button effect */
 .btn-3d {
   border: none;
+  padding-top: 17px;
+  padding-bottom: 11px;
   background: linear-gradient(180deg, #ea9a5f 0%, var(--orange) 55%, #c2601f 100%);
   box-shadow:
     0 6px 0 #96481c,
