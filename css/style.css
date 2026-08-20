@@ -345,13 +345,13 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; }
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
 }
 .event-card {
-  max-width: 980px;
+  max-width: 1080px;
   margin: 0 auto;
   text-align: center;
 }
 .event-cover-duo {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin-bottom: 14px;
 }
