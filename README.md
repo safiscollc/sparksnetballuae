@@ -52,3 +52,28 @@ git branch -M main
 git remote add origin <your-repo-url>
 git push -u origin main
 ```
+
+## Current live setup (as of Aug 2026)
+
+- **Repo:** `git@github.com:safiscollc/sparksnetballuae.git`, branch `main`.
+- **Live site:** https://www.sparksnetball.com — hosted on **Netlify**, connected
+  directly to the GitHub repo. Any push to `main` auto-deploys within ~1-2
+  minutes. No manual Netlify steps needed for normal edits.
+- **Auth:** pushes are authenticated via an **SSH key** registered to the
+  `safiscollc` GitHub account (not username/password).
+
+### Re-pulling this project on a new/different device
+
+1. Clone it: `git clone git@github.com:safiscollc/sparksnetballuae.git`
+   (or copy the existing `Sparks Netball/website` folder over directly).
+2. Make sure the new device can authenticate to GitHub as `safiscollc`:
+   - Generate an SSH key on the new device and add it under
+     GitHub → Settings → SSH and GPG keys, **or**
+   - Use `gh auth login` / a personal access token instead of SSH.
+   - Without this, `git push` will fail even though the files are there.
+3. Nothing to configure on Netlify's side — it watches the GitHub repo itself,
+   not any specific machine, so once a push lands on `main` from an
+   authenticated device, it deploys automatically.
+4. (Optional) For local preview before pushing, run a simple server from the
+   project folder, e.g. `python3 -m http.server 8811`, then visit
+   `http://localhost:8811`.
